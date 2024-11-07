@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.lab6.DrawingController">
+    <!-- Центрируем Canvas в главной области -->
+    <center>
+        <Canvas fx:id="canvas" width="600.0" height="400.0"/>
+    </center>
+    <!-- Нижняя область с кнопками и отступами -->
+    <bottom>
+        <HBox alignment="center">
+            <!-- Левый отступ -->
+            <Region prefWidth="50.0"/>
+
+            <!-- Кнопки с фиксированной шириной -->
+            <Button fx:id="drawCircleButton" text="Draw Circle" prefWidth="200.0"/>
+            <Region prefWidth="50.0"/>
+            <Button fx:id="drawRectangleButton" text="Draw Rectangle" prefWidth="200.0"/>
+
+            <!-- Правый отступ -->
+            <Region prefWidth="50.0"/>
+        </HBox>
+    </bottom>
+</BorderPane>
